@@ -1,0 +1,204 @@
+@media (min-width: 980px) {
+    body {
+        display: grid;
+        height: 600px;
+        grid-template-columns: 1fr;
+        ;
+        grid-template-rows: 1fr 6fr 1fr;
+        background-color: rgb(221, 221, 221);
+        justify-content: center;
+    }
+
+    header {
+        grid-column: 1/3;
+        grid-row: 1/2;
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        color: rgb(221, 221, 221);
+        background-color: rgb(0, 58, 124);
+        width: 100%;
+    }
+
+    header img {
+        grid-column: 1/2;
+        justify-self: right;
+    }
+
+    nav {
+        grid-column: 1/3;
+        list-style: none;
+        display: flex;
+        background-color: black;
+        align-items: center;
+        border-radius: 0.2em;
+        font-family: Fredoka;
+    }
+
+    nav a {
+        display: block;
+        color: #ffffff;
+        padding: 10px 10% 10px 10%;
+        text-decoration: none;
+        text-align: center;
+        font-size: 1.3em;
+    }
+
+    nav a:hover {
+        display: block;
+        color: #ffffff;
+        padding: 10px 10% 10px 10%;
+        text-decoration: underline wavy rgb(221, 221, 221) 1px;
+        text-align: center;
+        font-weight: bold;
+        font-size: 1.3em;
+    }
+
+    nav a.active {
+        color: yellow;
+    }
+
+    #menu {
+        display: none;
+    }
+
+    main {
+        display: grid;
+        grid-template-columns: 1.5fr 1fr;
+        grid-template-rows: 0.8fr 0.5fr;
+        width: 70vw;
+        margin: 10px auto;
+        grid-gap: 0.5vw;
+    }
+
+    .course-work {
+        grid-column: 1/2;
+        grid-row: 1/2;
+        box-sizing: border-box;
+        border: black solid 1px;
+        border-radius: 8px;
+        margin: 0 auto;
+        width: 100%;
+    }
+
+    .course-work .first {
+        background-color: rgb(0, 58, 124);
+        border-radius: 8px;
+        margin: 0 auto;
+    }
+
+    .course-work ul {
+        margin: 20px;
+    }
+
+    .course-work ul li {
+        margin-left: 50px;
+        font-size: 1.3rem;
+        padding-bottom: 20px;
+    }
+
+    .course-work h2,
+    .place h2 {
+        width: 30vw;
+    }
+
+    .place {
+        grid-column: 2/3;
+        grid-row: 1/2;
+        box-sizing: border-box;
+        border: black solid 1px;
+        border-radius: 8px;
+        margin: 0 auto;
+    }
+
+    .place .first {
+        background-color: rgb(0, 58, 124);
+        border-radius: 8px;
+        margin: 0 auto;
+    }
+
+    .place .first h2 {
+        margin: 0 auto;
+    }
+
+    .place img {
+        display: block;
+        max-width: 58%;
+        margin: 0 auto;
+    }
+
+    .courses {
+        grid-column: 1/3;
+        grid-row: 2/3;
+        box-sizing: border-box;
+        border: black solid 1px;
+        border-radius: 8px;
+        margin: 0 auto;
+        padding: 0;
+        width: 100%;
+        height: 100%;
+    }
+
+    .courses .first {
+        background-color: rgb(0, 58, 124);
+        border-radius: 8px;
+        margin: 0 auto;
+    }
+
+    .courses .first h2 {
+        margin: 0 auto;
+        width: 100%;
+    }
+
+    .courses .button {
+        display: flex;
+        max-width: 100%;
+        padding: 10px 0;
+        border-style: solid;
+        border-width: 0 0 1px 0;
+        border-color: transparent transparent black transparent;
+        box-sizing: border-box;
+        text-align: center;
+    }
+
+    .courses .button button {
+        padding: 5px;
+        margin: 0 20px;
+        font-size: 1.2rem;
+        font-weight: bold;
+        text-align: center;
+        text-decoration: none;
+        width: 30vw;
+        background-color: black;
+        color: rgb(245, 225, 195);
+        border-radius: 8px;
+        box-sizing: border-box;
+        text-align: center;
+    }
+
+    .filtered-courses {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+        padding: 10px;
+    }
+
+    .filtered-courses button {
+        padding: 5px;
+        margin: 5px 10px;
+        font-size: 1.4rem;
+        font-weight: bold;
+        text-align: center;
+        text-decoration: none;
+        width: 20vw;
+        background-color: rgb(177, 177, 177);
+        color: black;
+        border-radius: 8px;
+        border-width: 1px;
+    }
+
+    footer {
+        grid-column: 1/3;
+        grid-row: 4/5;
+    }
+}

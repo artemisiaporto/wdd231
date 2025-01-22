@@ -1,15 +1,74 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-US">
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>WDD 231 - Web Frontend Development I - Artemisia Porto Jacob</title>
+    <meta name="description" content="Home page for the class WDD 231 - Web Frontend Development I.
+            Artemísia Renata Porto Jacob wrote the code and the content of the page is
+            a personal presentation of her">
+    <meta name="author" content="Artemisia Jacob">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <script src="scripts/personal.js" defer></script>
 </head>
 
 <body>
-    <h1>Artemísia Porto</h1>
-    <h2>Testing</h2>
+    <header>
+        <img src="images/profile.webp" alt="profile image">
+        <h1>Artemísia Porto Jacob</h1>
+        <button id="menu"></button>
+        <nav>
+            <a href="index.html" class="active" title="i-learn" target="_blank">Home</a>
+            <a href="#" title="chamber project" target="_blank">Chamber</a>
+            <a href="https://github.com/artemisiaporto/wdd231" title="scripture" target="_blank">GitHub Profile</a>
+            <a href="https://www.linkedin.com/in/artemisia-porto/?locale=en_US" target="_blank"
+                title="linkedin">LinkedIn</a>
+        </nav>
+    </header>
+    <main>
+        <section class="course-work">
+            <div class="first">
+                <h2>Course Work</h2>
+            </div>
+            <ul>
+                <li><a href="https://www.w3schools.com/">W3 Schools</a></li>
+                <li><a href="https://coolors.co/">Coolors</a></li>
+                <li><a href="https://developer.mozilla.org/">MDN Web Docs</a></li>
+            </ul>
+        </section>
+        <section class="place">
+            <div class="first">
+                <h2>Jundiai, Brazil</h2>
+            </div>
+            <img src="images/av-jundiai-av-9-de-julho.webp" alt="Jundiai photo">
+            <p>Jundiai at night</p>
+        </section>
+        <section class="courses">
+            <div class="first">
+                <h2>Web and Computer Programming Certificate</h2>
+            </div>
+            <div class="button">
+                <button class="all">All</button>
+                <button class="cse">CSE</button>
+                <button class="wdd">WDD</button>
+            </div>
+            <div class="credits">
+                <p>Total credits: <span id="total-credits">0</span></p>
+            </div>
+            <div class="filtered-courses"></div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; <span id="currentyear"></span> Artemísia Porto - Brazil</p>
+        <p><span id="lastModified"></span></p>
+    </footer>
 </body>
 
 </html>
