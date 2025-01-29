@@ -9,10 +9,10 @@ document.getElementById("lastModified").textContent = `Last Modification: ${last
 
 //hamburguer button
 const hamButton = document.querySelector('#menu');
-const navi = document.querySelector('nav');
+const navElement = document.querySelector("#animateme");
 
 hamButton.addEventListener('click', () => {
-    navi.classList.toggle('open');
+    navElement.classList.toggle('open');
     hamButton.classList.toggle('open');
 });
 

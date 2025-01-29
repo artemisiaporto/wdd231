@@ -1,0 +1,28 @@
+{
+    "wardName": "Jundiaí",
+    "wardYear": 1950,
+    "familyinfo": [
+        {
+            "familyName": "Porto Jacob",
+            "numberPeople": 3,
+            "bishopricVisit": true,
+            "familymembers": [
+                {
+                    "name": "Artemísia",
+                    "gender": "female",
+                    "birthDate": "07/12/1998"
+                },
+                {
+                    "name": "Julio",
+                    "gender": "male",
+                    "birthDate": "06/14/1999"
+                },
+                {
+                    "name": "Artemísia",
+                    "gender": "female",
+                    "birthDate": "08/25/2026"
+                }
+            ]
+        }
+    ]
+}
