@@ -3,7 +3,6 @@
         display: grid;
         height: 600px;
         grid-template-columns: 1fr;
-        ;
         grid-template-rows: 1fr 6fr 1fr;
         background-color: rgb(221, 221, 221);
         justify-content: center;
@@ -28,10 +27,26 @@
         display: none;
     }
 
-    ul.menuLinks,
-    ul.menuLinks.open {
+    nav#animateme {
+        display: block;
+        grid-column: 1/3;
+    }
+
+    ul.menuLinks {
         display: flex;
         justify-content: space-around;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+
+    ul.menuLinks li {
+        padding: 10px;
+    }
+
+    ul.menuLinks a {
+        color: rgb(221, 221, 221);
+        text-decoration: none;
     }
 
     ul.menuLinks a:hover {

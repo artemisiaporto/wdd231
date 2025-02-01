@@ -67,6 +67,7 @@ ul.menuLinks li a {
 }
 
 nav {
+    grid-column: 1/4;
     display: grid;
     grid-template-rows: 0fr;
     transition: grid-template-rows 0.5s ease-out;

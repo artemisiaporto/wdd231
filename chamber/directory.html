@@ -16,14 +16,75 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Atma:wght@300;400;500;600;700&family=Exo:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/larger.css">
-    <script src="scripts/personal.js" defer></script>
+    <script src="scripts/directory.js" defer></script>
     <link rel="icon" href="favicon.ico">
 </head>
 
 <body>
+    <header>
+        <img src="images/logo.webp" alt="logo">
+        <h1>Jundiai</h2>
+            <p>Chamber of Commerce</p>
+            <button id="menu"></button>
+            <nav id="animateme">
+                <ul class="menuLinks">
+                    <li class="active"><a href="../index.html" title="home" target="_blank">Home</a></li>
+                    <li><a href="directory.html" title="directory-page" target="_blank">Directory</a></li>
+                    <li><a href="#" title="join" target="_blank">Join</a></li>
+                    <li><a href="#" target="_blank" title="discover">Discover</a></li>
+                </ul>
+            </nav>
+    </header>
+    <main>
+        <div class="hero">
+            <button id="tickets">Keynote Tickets</button>
+        </div>
+        <section id="info">
+            <div id="events">
 
+            </div>
+            <div id="current-weather">
+
+            </div>
+            <div id="weather-forecast">
+
+            </div>
+        </section>
+        <button id="menu-grid">Grid</button>
+        <button id="menu-list">List</button>
+        <section id="cards">
+
+        </section>
+    </main>
+    <footer>
+        <div id="first-footer-info">
+            <p>Jundiai Chamber of Commerce</p>
+            <p>Rua Arco-Iris, 13, Centro</p>
+            <p>Jundiai, Sao Paulo, Brazil</p>
+            <p>info@jundiaicc.org</p>
+            <p>+55 (11) 1234-5678</p>
+        </div>
+        <nav id="footer-social">
+            <a href="https://www.youtube.com/" target="_blank">
+                <img src="images/youtube-logo.webp" alt="youtube-logo">
+            </a>
+            <a href="https://x.com/home" target="_blank">
+                <img src="images/x-logo.webp" alt="x-logo">
+            </a>
+            <a href="https://www.linkedin.com/" target="_blank">
+                <img src="images/linkedin-logo.webp" alt="linkedin-logo">
+            </a>
+        </nav>
+        <div id="second-footer-info">
+            <p>WDD231 Class Project</p>
+            <p>Artemisia Porto Jacob</p>
+            <p>&copy; <span id="currentyear"></span> Jundiai Chamber of Commerce</p>
+            <p><span id="lastModified"></span></p>
+        </div>
+    </footer>
 </body>
 
 </html>
