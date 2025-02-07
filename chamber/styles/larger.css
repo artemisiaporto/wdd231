@@ -1,4 +1,4 @@
-@media (min-width: 980px) {
+@media (min-width: 800px) {
     body {
         display: grid;
         height: 600px;
@@ -66,6 +66,10 @@
 
     .list {
         max-width: 800px;
+    }
+
+    .list section {
+        grid-template-columns: 1fr 1fr 0.5fr 0.5fr 0.5fr;
     }
 
     footer {
