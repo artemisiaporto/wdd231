@@ -5,7 +5,7 @@
             "address": "Rod. João Cereser, km 66, Pinheirinho, Jundiaí, SP",
             "phoneNumber": "(11) 4589-1494",
             "websiteUrl": "https://parquedacidadejundiai.com.br/",
-            "image": "parque-da-cidade.jpg",
+            "image": "parque-da-cidade.webp",
             "membershipLevel": 3
         },
         {
@@ -13,7 +13,7 @@
             "address": "Alameda dos Ipes, 101, Vila Nova Alvorada, Jundiaí, SP",
             "phoneNumber": "(11) 99357-4935",
             "websiteUrl": "http://jumpark.com.br",
-            "image": "jumpark.jpg",
+            "image": "jumpark.webp",
             "membershipLevel": 2
         },
         {
@@ -21,7 +21,7 @@
             "address": "Rodovia João Cereser, Pista Sul Km 64+400, Pinherinho, Jundiaí, SP",
             "phoneNumber": "(11) 4589-1494",
             "websiteUrl": "http://mundodascriancasjundiai.com.br",
-            "image": "mundo-das-criancas.jpg",
+            "image": "mundo-das-criancas.webp",
             "membershipLevel": 3
         },
         {
@@ -29,7 +29,7 @@
             "address": "Av. Navarro de Andrade, 120, Vila Bandeirantes, Jundiaí, SP",
             "phoneNumber": "(11) 4581-2110",
             "websiteUrl": "http://www.jardimbotanico.jundiai.sp.gov.br",
-            "image": "jardim-botanico.jpg",
+            "image": "jardim-botanico.webp",
             "membershipLevel": 2
         },
         {
@@ -37,7 +37,7 @@
             "address": "Av. Antônio Frederico Ozanan, 6600, Jardim Botânico, Jundiaí",
             "phoneNumber": "(11) 4583-4900",
             "websiteUrl": "http://www.espacodaventura.com.br",
-            "image": "sesc-jundiai.jpg",
+            "image": "sesc-jundiai.webp",
             "membershipLevel": 3
         },
         {
@@ -45,7 +45,7 @@
             "address": "Rod. João Cereser - Cidade Santos Dumont, Jundiaí, SP",
             "phoneNumber": "(11) 4589-1338",
             "websiteUrl": "https://mundodascriancasjundiai.com.br/atracoes/espaco-das-aguas/",
-            "image": "espaco-das-aguas.jpg",
+            "image": "espaco-das-aguas.webp",
             "membershipLevel": 2
         },
         {
@@ -53,7 +53,7 @@
             "address": "Rua São Lázaro, 415, Jardim Morumbi, Jundiaí, SP",
             "phoneNumber": "(11) 940219808",
             "websiteUrl": "https://www.instagram.com/fliperamabarclub/",
-            "image": "fliperama-bar-club.jpg",
+            "image": "fliperama-bar-club.webp",
             "membershipLevel": 1
         }
     ]
