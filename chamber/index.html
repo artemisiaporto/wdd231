@@ -4,10 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Chamber of Commerce - Jundiai Brazil</title>
-    <meta name="description" content="Directory page of the Chamber of Commerce">
+    <title>Home Page - Chamber of Commerce - Jundiai Brazil</title>
+    <meta name="description" content="Home page of the Chamber of Commerce">
     <meta name="author" content="Artemisia Jacob">
-    <meta property="og:title" content="Chamber of Commerce">
+    <meta property="og:title" content="Home Page">
     <meta property="og:type" content="website">
     <meta property="og:image" content="https://artemisiaporto.github.io/wdd231/images/av-jundiai-av-9-de-julho.webp">
     <meta property="og:url" content="https://artemisiaporto.github.io/wdd231/chamber/directory.html">
@@ -19,7 +19,7 @@
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/larger.css">
-    <script src="scripts/chamber.js" defer></script>
+    <script src="scripts/home.js" defer></script>
     <link rel="icon" href="favicon.ico">
 </head>
 
@@ -31,21 +31,49 @@
         <button id="menu"></button>
         <nav id="animateme">
             <ul class="menuLinks">
-                <li><a href="../index.html" title="home" target="_blank">Home</a></li>
-                <li class="active"><a href="directory.html" title="directory-page" target="_blank">Directory</a></li>
+                <li class="active"><a href="index.html" title="home" target="_blank">Home</a></li>
+                <li><a href="directory.html" title="directory-page" target="_blank">Directory</a></li>
                 <li><a href="#" title="join" target="_blank">Join</a></li>
                 <li><a href="#" target="_blank" title="discover">Discover</a></li>
             </ul>
         </nav>
     </header>
-    <main>
-        <div id="menu-buttons">
-            <button id="menu-grid">Grid</button>
-            <button id="menu-list">List</button>
+    <main class="home">
+        <div class="hero">
+            <img src="images/hero-image.webp" alt="example of funny map">
+            <a href="join.html" id="tickets">Join the Funniest Community</a>
         </div>
-        <section id="cards" class="grid">
-
+        <h2 id="main">Home</h2>
+        <section id="info">
+            <div id="events">
+                <h3>Events</h3>
+                <ul>
+                    <li>Meet the newest water slide at "Espaço das Águas"</li>
+                    <li>Buy 5 tickets and earn 5 more on satudays at Jumpark</li>
+                    <li>Happy Valentine's Day: bring your loved one and get a surprise gift</li>
+                </ul>
+            </div>
+            <div id="current-weather">
+                <h3>Current Weather</h3>
+                <img id="weather-icon">
+                <div id="info-text">
+                    <p><span id="current-temp"></span></p>
+                    <p id="description"></p>
+                    <p id="high-temp"></p>
+                    <p id="low-temp"></p>
+                    <p id="humidity"></p>
+                    <p id="sunrise"></p>
+                    <p id="sunset"></p>
+                </div>
+            </div>
+            <div id="weather-forecast">
+                <h3>Weather Forecast</h3>
+                <p id="today"></p>
+                <p id="next-day"></p>
+                <p id="next-day2"></p>
+            </div>
         </section>
+        <div id="spotlights" class="grid"></div>
     </main>
     <footer>
         <div id="first-footer-info">
