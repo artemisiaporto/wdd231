@@ -14,14 +14,54 @@ body {
 header {
     display: grid;
     grid-template-columns: 100px auto 50px;
-    background-color: rgb(0, 58, 124);
     justify-content: center;
+    animation: blue-background-color 3s ease-in-out forwards;
+}
+
+@keyframes blue-background-color {
+    0% {
+        background-color: rgb(94, 152, 218);
+    }
+
+    70% {
+        background-color: rgb(33, 96, 168);
+    }
+
+    100% {
+        background-color: rgb(0, 58, 124);
+    }
+}
+
+@keyframes white-color {
+    0% {
+        color: rgb(0, 0, 0);
+    }
+
+    60% {
+        color: rgb(133, 133, 133);
+    }
+
+    100% {
+        color: rgb(255, 255, 255);
+    }
 }
 
 header img {
     width: 100px;
     padding: 20px;
     align-content: center;
+    opacity: 0.5;
+    animation: fadeIn 3s ease-in-out forwards;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0.5;
+    }
+
+    to {
+        opacity: 1;
+    }
 }
 
 header,
@@ -31,7 +71,7 @@ main {
 
 h1 {
     font-family: 'Fredoka';
-    color: rgb(245, 225, 195);
+    animation: white-color 3s ease-in-out forwards;
     align-content: center;
 }
 
@@ -114,12 +154,16 @@ ul.menuLinks a:hover {
 .course-work h2,
 .place h2,
 .courses h2 {
-    background-color: rgb(0, 58, 124);
+    animation: blue-background-color 3s ease-in-out forwards;
     color: rgb(245, 225, 195);
     padding: 10px;
     border-radius: 8px;
     width: 85vw;
     text-align: center;
+}
+
+.first {
+    animation: blue-background-color 3s ease-in-out forwards;
 }
 
 .place img {
@@ -157,7 +201,7 @@ ul.menuLinks a:hover {
     text-align: center;
 }
 
-.filtered-courses button {
+.filtered-courses div {
     padding: 5px;
     margin: 5px auto;
     font-size: 1rem;
@@ -167,6 +211,7 @@ ul.menuLinks a:hover {
     width: 80vw;
     background-color: rgb(177, 177, 177);
     color: black;
+    border: 1px solid black;
     border-radius: 8px;
     border-width: 1px;
 }
@@ -186,4 +231,45 @@ footer {
     width: 50vw;
     justify-content: center;
     padding-bottom: 20px;
+}
+
+dialog {
+    border: 1px solid black;
+    border-radius: 1rem;
+    padding: 10px;
+    background-color: white;
+    box-shadow: 0 0 5px 2px;
+    width: 80%;
+    max-width: 500px;
+    margin: auto auto;
+}
+
+::backdrop {
+    background-color: rgb(0, 0, 0, 0.5);
+}
+
+dialog button {
+    position: absolute;
+    top: 12px;
+    right: 25px;
+    padding: .5rem 1rem;
+    border: 2px solid black;
+}
+
+dialog h2 {
+    background-color: rgb(0, 58, 124);
+    color: white;
+    padding: 5px;
+    text-align: center;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+dialog h3 {
+    margin-bottom: 5px;
+    padding-left: 5px;
+}
+
+dialog p {
+    padding: 5px;
 }

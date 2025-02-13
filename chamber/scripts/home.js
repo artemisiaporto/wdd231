@@ -108,9 +108,10 @@ const spotlightCards = document.querySelector("#spotlights");
 async function getMemberSpotlight() {
     const response = await fetch(url);
     const data = await response.json();
-    const filtered = getRandomMember(data.members, 3);
+    const filtered = data.members.filter(member => member.membershipLevel >= 2);
+    const selected = getRandomMember(data.members, 3);
     //console.table(data.members);
-    displaySpotlight(filtered);
+    displaySpotlight(selected);
 }
 
 function getRandomMember(object, num) {

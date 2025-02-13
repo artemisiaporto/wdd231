@@ -107,23 +107,23 @@ const showCourses = (courses) => {
         const totalCredits = courses.reduce((sum, course) => sum + course.credits, 0);
         document.querySelector("#total-credits").textContent = totalCredits;
 
-        const courseButton = `
-            <div class="course-button">
-                <button>${course.subject} ${course.number}</button>
-            </div>  
-        `;
-        coursesButton.innerHTML += courseButton;
-
-        const courseDiv = coursesButton.querySelector(".course-button:last-child");
-        const button = courseDiv.querySelector("button");
+        let courseButton = document.createElement("div");
+        courseButton.textContent = `${course.subject} ${course.number}`;
+        courseButton.classList.add("course-button");
 
         if (course.completed) {
-            button.style.backgroundColor = "rgb(120, 156, 197)";
+            courseButton.style.backgroundColor = "rgb(120, 156, 197)";
         } else {
-            button.style.backgroundColor = "rgb(177, 177, 177)";
+            courseButton.style.backgroundColor = "rgb(177, 177, 177)";
         }
+
+        courseButton.addEventListener("click", () => {
+            displayCourseDetails(course);
+        });
+
+        coursesButton.appendChild(courseButton);
     });
-}
+};
 
 showCourses(courses);
 
@@ -147,3 +147,23 @@ const wddCourses = document.querySelector(".wdd");
 wddCourses.addEventListener('click', () => {
     showCourses(courses.filter(course => course.subject == "WDD"));
 })
+
+//display modal
+const dialogScreen = document.querySelector("#course-details");
+
+function displayCourseDetails(course) {
+    dialogScreen.innerHTML = "";
+    dialogScreen.innerHTML = `
+    <button id="closeScreen">❌</button>
+    <h2>${course.subject} ${course.number}</h2>
+    <h3>${course.title}</h3>
+    <p>${course.credits} credits</p>
+    <p>Certificate: ${course.certificate}</p>
+    <p>${course.description}</p>
+    <p>Technologies: ${course.technology.join(", ")}</p>`;
+    dialogScreen.showModal();
+
+    closeScreen.addEventListener("click", () => {
+        dialogScreen.close();
+    });
+};
