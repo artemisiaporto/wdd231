@@ -28,7 +28,7 @@
         <img src="images/logo.webp" alt="logo">
         <h1>Jundiai</h1>
         <p>Chamber of Commerce</p>
-        <button id="menu"></button>
+        <button id="menu" aria-label="Toggle navigation menu"></button>
         <nav id="animateme">
             <ul class="menuLinks">
                 <li><a href="index.html" title="home" target="_blank">Home</a></li>
@@ -41,15 +41,15 @@
     <main id="join">
         <h2 id="join-h2">Jundiaí Chamber of Commerce - Become a Member</h2>
         <form method="GET" action="thanks.html" class="formDesign">
-            <label>First Name*<input type="text" required name="first-name" autocomplete="first-name"></label>
-            <label>Last Name*<input type="text" required name="last-name" autocomplete="last-name"></label>
+            <label>First Name*<input type="text" required name="first-name" autocomplete="given-name"></label>
+            <label>Last Name*<input type="text" required name="last-name" autocomplete="family-name"></label>
             <label>Organizational Title<input type="text" name="org-title"
                     title="Only accept alpha characters, hyphens, and spaces with a minimum of seven characters"
-                    autocomplete="organizational-title" pattern="[A-Za-zÀ-ÿ\s\-]{7,}"></label>
+                    autocomplete="organization-title" pattern="[A-Za-zÀ-ÿ\s\-]{7,}"></label>
             <label>Email Address*<input type="email" required name="email" title="Enter a valid email address"
-                    autocomplete="first-name@company.com"></label>
-            <label>Mobile Phone Number*<input type="telephone" required name="phone-number"
-                    title="Enter a valid mobile phone number" autocomplete="+55 12345-6789"></label>
+                    autocomplete="email"></label>
+            <label>Mobile Phone Number*<input type="tel" required name="phone-number"
+                    title="Enter a valid mobile phone number" autocomplete="tel"></label>
             <label>Business/Organization's Name*<input type="text" required name="org-name" title="Enter a short name"
                     autocomplete="organization"></label>
 
