@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Chamber of Commerce - Jundiai Brazil</title>
+    <meta name="description" content="Join page of the Chamber of Commerce">
+    <meta name="author" content="Artemisia Jacob">
+    <meta property="og:title" content="Chamber of Commerce Join Page">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://artemisiaporto.github.io/wdd231/images/av-jundiai-av-9-de-julho.webp">
+    <meta property="og:url" content="https://artemisiaporto.github.io/wdd231/chamber/directory.html">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Atma:wght@300;400;500;600;700&family=Exo:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/join-larger.css">
+    <script src="scripts/join.js" defer></script>
+    <link rel="icon" href="favicon.ico">
+</head>
+
+<body>
+    <header>
+        <img src="images/logo.webp" alt="logo">
+        <h1>Jundiai</h1>
+        <p>Chamber of Commerce</p>
+        <button id="menu"></button>
+        <nav id="animateme">
+            <ul class="menuLinks">
+                <li><a href="index.html" title="home" target="_blank">Home</a></li>
+                <li><a href="directory.html" title="directory-page" target="_blank">Directory</a></li>
+                <li class="active"><a href="join.html" title="join">Join</a></li>
+                <li><a href="#" target="_blank" title="discover">Discover</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main id="join">
+        <h2 id="join-h2">Jundiaí Chamber of Commerce - Become a Member</h2>
+        <form method="GET" action="thanks.html" class="formDesign">
+            <label>First Name*<input type="text" required name="first-name" autocomplete="first-name"></label>
+            <label>Last Name*<input type="text" required name="last-name" autocomplete="last-name"></label>
+            <label>Organizational Title<input type="text" name="org-title"
+                    title="Only accept alpha characters, hyphens, and spaces with a minimum of seven characters"
+                    autocomplete="organizational-title" pattern="[A-Za-zÀ-ÿ\s\-]{7,}"></label>
+            <label>Email Address*<input type="email" required name="email" title="Enter a valid email address"
+                    autocomplete="first-name@company.com"></label>
+            <label>Mobile Phone Number*<input type="telephone" required name="phone-number"
+                    title="Enter a valid mobile phone number" autocomplete="+55 12345-6789"></label>
+            <label>Business/Organization's Name*<input type="text" required name="org-name" title="Enter a short name"
+                    autocomplete="organization"></label>
+
+            <label>Membership Level
+                <select name="membership" required>
+                    <option value="" disabled selected>Select One of The Membership Levels</option>
+                    <option value="non-profit"> NP Membership</option>
+                    <option value="bronze"> Bronze Membership</option>
+                    <option value="silver"> Silver Membership</option>
+                    <option value="gold"> Gold Membership</option>
+                </select>
+            </label>
+
+            <label>Business/Organization's Description<textarea title="Write a short description about the company"
+                    name="org-description"></textarea></label>
+
+            <input type="hidden" name="timestamp" id="timestamp" value="">
+            <input type="submit" value="Finish Application">
+        </form>
+        <section id="membership-level">
+            <h2>Membership Levels</h2>
+            <div class="member-card">
+                <h3>Non Profit Membership Level</h3>
+                <button id="openButton1">More Details</button>
+            </div>
+            <div class="member-card">
+                <h3>Bronze Membership Level</h3>
+                <button id="openButton2">More Details</button>
+            </div>
+            <div class="member-card">
+                <h3>Silver Membership Level</h3>
+                <button id="openButton3">More Details</button>
+            </div>
+            <div class="member-card">
+                <h3>Gold Membership Level</h3>
+                <button id="openButton4">More Details</button>
+            </div>
+            <dialog id="membership-box">
+                <div></div>
+                <button id="closeScreen">❌</button>
+            </dialog>
+        </section>
+    </main>
+    <footer>
+        <div id="first-footer-info">
+            <p>Jundiai Chamber of Commerce</p>
+            <p>Rua Arco-Iris, 13, Centro</p>
+            <p>Jundiai, Sao Paulo, Brazil</p>
+            <p>info@jundiaicc.org</p>
+            <p>+55 (11) 1234-5678</p>
+        </div>
+        <nav id="footer-social">
+            <a href="https://www.youtube.com/" target="_blank">
+                <img src="images/youtube-logo.webp" alt="youtube-logo">
+            </a>
+            <a href="https://x.com/home" target="_blank">
+                <img src="images/x-logo.webp" alt="x-logo">
+            </a>
+            <a href="https://www.linkedin.com/" target="_blank">
+                <img src="images/linkedin-logo.webp" alt="linkedin-logo">
+            </a>
+        </nav>
+        <div id="second-footer-info">
+            <p>WDD231 Class Project</p>
+            <p>Artemisia Porto Jacob</p>
+            <p>&copy; <span id="currentyear"></span> Jundiai Chamber of Commerce</p>
+            <p><span id="lastModified"></span></p>
+        </div>
+    </footer>
+</body>
+
+</html>
