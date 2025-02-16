@@ -24,7 +24,7 @@ hamButton.addEventListener('click', () => {
     hamButton.classList.toggle('open');
 });
 
-document.querySelector('#timestamp').value = new Date();
+document.querySelector('#timestamp').value = new Date().toISOString();
 
 const openButton1 = document.querySelector("#openButton1");
 const openButton2 = document.querySelector("#openButton2");
