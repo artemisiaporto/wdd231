@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Chamber of Commerce - Jundiai Brazil</title>
+    <meta name="description" content="Directory page of the Chamber of Commerce">
+    <meta name="author" content="Artemisia Jacob">
+    <meta property="og:title" content="Chamber of Commerce">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://artemisiaporto.github.io/wdd231/images/av-jundiai-av-9-de-julho.webp">
+    <meta property="og:url" content="https://artemisiaporto.github.io/wdd231/chamber/directory.html">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Atma:wght@300;400;500;600;700&family=Exo:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <script src="scripts/places.js" defer></script>
+    <link rel="icon" href="favicon.ico">
+</head>
+
+<body>
+    <header>
+        <img src="images/logo.webp" alt="logo">
+        <h1>Jundiai</h1>
+        <p>Chamber of Commerce</p>
+        <button id="menu"></button>
+        <nav id="animateme">
+            <ul class="menuLinks">
+                <li><a href="../index.html" title="home" target="_blank">Home</a></li>
+                <li class="active"><a href="directory.html" title="directory-page">Directory</a></li>
+                <li><a href="#" title="join" target="_blank">Join</a></li>
+                <li><a href="#" target="_blank" title="discover">Discover</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2>Chamber of Comerce - Meet New and Wonderful Places</h2>
+        <p id="message"></p>
+        <section id="place-cards" class="grid"></section>
+    </main>
+    <footer>
+        <div id="first-footer-info">
+            <p>Jundiai Chamber of Commerce</p>
+            <p>Rua Arco-Iris, 13, Centro</p>
+            <p>Jundiai, Sao Paulo, Brazil</p>
+            <p>info@jundiaicc.org</p>
+            <p>+55 (11) 1234-5678</p>
+        </div>
+        <nav id="footer-social">
+            <a href="https://www.youtube.com/" target="_blank">
+                <img src="images/youtube-logo.webp" alt="youtube-logo">
+            </a>
+            <a href="https://x.com/home" target="_blank">
+                <img src="images/x-logo.webp" alt="x-logo">
+            </a>
+            <a href="https://www.linkedin.com/" target="_blank">
+                <img src="images/linkedin-logo.webp" alt="linkedin-logo">
+            </a>
+        </nav>
+        <div id="second-footer-info">
+            <p>WDD231 Class Project</p>
+            <p>Artemisia Porto Jacob</p>
+            <p>&copy; <span id="currentyear"></span> Jundiai Chamber of Commerce</p>
+            <p><span id="lastModified"></span></p>
+        </div>
+    </footer>
+</body>
+
+</html>

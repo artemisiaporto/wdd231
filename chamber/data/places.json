@@ -1,0 +1,52 @@
+{
+    "places": [
+        {
+            "name": "Morangaba Waterfall",
+            "info": "Located in the Serra do Japi region, it is considered one of the most beautiful waterfalls in the municipality. However, it is important to check access in advance, as it is private property, and during the pandemic, access was restricted.",
+            "websiteUrl": "https://serradojapi.jundiai.sp.gov.br/2019/01/cachoeira-de-morangaba-passa-por-vistoria-e-limpeza/",
+            "image": "morangaba.webp"
+        },
+        {
+            "name": "Serra do Japi Trail",
+            "info": "This challenging trail offers an immersion into the local biodiversity, with approximately 16 km (round trip). Along the way, visitors can enjoy various natural landscapes and, on some routes, encounter waterfalls such as the Jabuticabeiras Waterfall.",
+            "websiteUrl": "https://passeiosbaratosemsp.com.br/serra-do-japi-em-jundiai-um-lindo-pedaco-da-mata-atlantica-60-km-de-sao-paulo/",
+            "image": "japi.webp"
+        },
+        {
+            "name": "Paraiso Trail",
+            "info": "With about 9.4 km (round trip), this medium-difficulty trail takes visitors to the Paraíso Waterfall, providing a refreshing experience in the heart of nature.",
+            "websiteUrl": "https://www.bioventura.com.br/project/serra_do_japi_paraiso/",
+            "image": "paraiso.webp"
+        },
+        {
+            "name": "Córrego dos Morcegos Trail",
+            "info": "This trail, approximately 8.4 km (round trip), runs through more humid and dense areas, following the Córrego dos Morcegos (Bats' Stream) and passing by numerous jabuticaba trees.",
+            "websiteUrl": "https://www.refugiosnointerior.com.br/dt/3016/trilha-do-corrego-dos-morcegos-em-jundiai/",
+            "image": "morcegos.webp"
+        },
+        {
+            "name": "Pedra da Baleia Trail",
+            "info": "Located in the southernmost part of Jundiaí, this easy-level trail leads to the top of Pedra da Baleia (Whale Rock), offering a panoramic view of the city. It is a great option for beginners in hiking.",
+            "websiteUrl": "https://rumoaventura.tur.br/produto/pedra-da-baleia-jundiai/",
+            "image": "baleia.webp"
+        },
+        {
+            "name": "Biquinha Trail",
+            "info": "With a low difficulty level, this 1.8 km trail offers panoramic views of Jundiaí, passing through riparian forests and small waterfalls. It is ideal for environmental education programs and family visits.",
+            "websiteUrl": "https://www.refugiosnointerior.com.br/dt/1073/trilha-da-biquinha-em-jundiai/",
+            "image": "biquinha.webp"
+        },
+        {
+            "name": "Jabuticabeiras Trail",
+            "info": "This trail, approximately 10 km (round trip), takes visitors to the Jabuticabeiras Waterfall, providing a refreshing dip. The route is filled with jabuticaba trees, offering a unique experience in the Serra do Japi.",
+            "websiteUrl": "https://www.bioventura.com.br/project/serra_do_japi_jabuticabeiras/",
+            "image": "jabu.webp"
+        },
+        {
+            "name": "Mirante Trail",
+            "info": "This trail offers a moderate hike that culminates at a viewpoint with a panoramic view of the region, allowing visitors to appreciate Jundiaí’s natural beauty from a privileged spot.",
+            "websiteUrl": "https://www.refugiosnointerior.com.br/dt/2993/trilha-do-mirante-em-jundiai/",
+            "image": "mirante.webp"
+        }
+    ]
+}
