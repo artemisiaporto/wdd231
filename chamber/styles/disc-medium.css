@@ -10,6 +10,7 @@
         grid-template-areas:
             "image name"
             "image info"
+            "image address"
             "image a";
         border: ridge;
         box-shadow: 10px 10px 20px rgba(5, 32, 105, 0.5);
@@ -35,6 +36,12 @@
     .pgrid div p {
         grid-area: info;
         text-align: center;
+    }
+
+    .pgrid div h4 {
+        grid-area: address;
+        text-align: center;
+        margin: 0.2rem;
     }
 
     .pgrid div a {

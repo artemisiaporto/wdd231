@@ -489,6 +489,7 @@ form input[type="submit"] {
         "name"
         "image"
         "info"
+        "address"
         "a";
     border: ridge;
     box-shadow: 10px 10px 20px rgba(5, 32, 105, 0.5);
@@ -512,6 +513,12 @@ form input[type="submit"] {
 
 .pgrid div p {
     grid-area: info;
+    text-align: center;
+    margin: 0.2rem;
+}
+
+.pgrid div h4 {
+    grid-area: address;
     text-align: center;
     margin: 0.2rem;
 }

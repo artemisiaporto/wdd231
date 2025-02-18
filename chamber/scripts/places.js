@@ -45,6 +45,7 @@ const displayPlaces = (places) => {
         let placeName = document.createElement("h3");
         let placeImage = document.createElement("img");
         let info = document.createElement("p");
+        let address = document.createElement("h4");
         let website = document.createElement("a");
 
         placeName.textContent = place.name;
@@ -57,6 +58,8 @@ const displayPlaces = (places) => {
 
         info.textContent = place.info;
 
+        address.textContent = place.address;
+
         website.setAttribute("href", `${place.websiteUrl}`);
         website.setAttribute("target", "_blank");
         website.textContent = "More Info";
@@ -64,6 +67,7 @@ const displayPlaces = (places) => {
         card.appendChild(placeName);
         card.appendChild(placeImage);
         card.appendChild(info);
+        card.appendChild(address);
         card.appendChild(website);
 
         placesCards.appendChild(card);
