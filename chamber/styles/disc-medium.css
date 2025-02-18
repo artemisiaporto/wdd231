@@ -1,0 +1,47 @@
+@media (min-width: 641px) {
+    .pgrid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+        grid-gap: 1.5rem;
+    }
+
+    .pgrid div {
+        display: grid;
+        grid-template-areas:
+            "image name"
+            "image info"
+            "image a";
+        border: ridge;
+        box-shadow: 10px 10px 20px rgba(5, 32, 105, 0.5);
+        max-width: 1000px;
+    }
+
+    .pgrid div h3 {
+        grid-area: name;
+        border-radius: 3px;
+        align-content: center;
+    }
+
+    .pgrid div img {
+        grid-area: image;
+        border-radius: 3px;
+    }
+
+    .pgrid div img:hover {
+        border: dashed;
+        box-shadow: 10px 10px 20px rgba(255, 255, 255, 0.5);
+    }
+
+    .pgrid div p {
+        grid-area: info;
+        text-align: center;
+    }
+
+    .pgrid div a {
+        grid-area: a;
+        align-content: center;
+        text-align: center;
+        color: black;
+        text-decoration: underline wavy #388de9 2px;
+    }
+}

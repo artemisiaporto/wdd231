@@ -42,7 +42,7 @@ const displayPlaces = (places) => {
     places.forEach((place) => {
 
         let card = document.createElement("div");
-        let placeName = document.createElement("h2");
+        let placeName = document.createElement("h3");
         let placeImage = document.createElement("img");
         let info = document.createElement("p");
         let website = document.createElement("a");
@@ -71,3 +71,27 @@ const displayPlaces = (places) => {
 };
 
 getPlacesData();
+
+const currentDate = Date.now();
+
+const lastVisit = localStorage.getItem('lastVisit');
+
+const messageElement = document.getElementById('message');
+
+if (!lastVisit) {
+    messageElement.innerHTML = "These are amazing places surrounding Jundiai. Take time and explore the opportunities!";
+    localStorage.setItem('lastVisit', currentDate);
+} else {
+
+    const lastVisitDate = new Date(parseInt(lastVisit));
+    const timeDifference = currentDate - lastVisitDate.getTime();
+
+    const daysDifference = Math.floor(timeDifference / (1000 * 60 * 60 * 24));
+
+    if (daysDifference < 1) {
+        messageElement.innerHTML = "Great to see you again! What is the next adventure?";
+    } else {
+        const dayWord = daysDifference === 1 ? "day" : "days";
+        messageElement.innerHTML = `You last visited ${daysDifference} ${dayWord} ago. Feel free to choose your next adventure!`;
+    }
+}
